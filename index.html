@@ -15,14 +15,20 @@
         <div id = "search_view">
             <div id = "search_bar">
                 <input id = "search_input" type = "text" />
-                <button onclick = "getVenues()">Search</button>
+                <button onclick = "callAPIs()">Search</button>
             </div>
             <div id = "information">
                 <center> SEARCH Venue IN Foursquare</center>
             </div>
         </div>
+        <div id="map"></div>
+        <div>
+            <span id="temp"></span> <br />
+            <span id="humidity"></span> <br />
+        </div>
         <div id = "results_view">
             <p>Results view</p>
+            
         </div>
       
     </div>
@@ -30,6 +36,7 @@
 
 
  
-<script src="app.js"></script>   
+<script src="app.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQz-dulnebn0pqnUxRai6D4L6I5smV-h8&callback=initMap"></script>   
 </body>
 </html>
